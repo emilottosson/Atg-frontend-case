@@ -1,0 +1,122 @@
+@import 'src/styles/general.scss';
+@import 'src/styles/colors.scss';
+
+.race-card {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0px 0px 20px 0px;
+    box-sizing: border-box;
+    background-color: $color-background-medium;
+    overflow: hidden;
+
+    .green {
+        color: $color-green;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .race-information {
+        padding: 20px 20px;
+        box-sizing: border-box;
+        display: flex;
+
+        &.v75 {
+            background-image: url('../../svgs/v75.svg');
+        }
+
+        &.v64 {
+            background-image: url('../../svgs/v64.svg');
+        }
+
+        &.v4 {
+            background-image: url('../../svgs/v4.svg');
+        }
+
+        .race-block {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+
+            .information-heading-big {
+                color: $color-white;
+                font-size: 42px;
+            }
+        }
+
+        .information-block {
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            padding-left: 20px;
+            text-align: left;
+
+            .information-heading {
+                color: $color-white;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tbody {
+
+            tr {
+                margin-right: 10px;
+                box-sizing: border-box;
+                width: 100%;
+
+                th {
+                    text-align: left;
+                    padding: 8px 20px 8px 6px;
+                    box-sizing: border-box;
+                    color: $color-white;
+                }
+
+                td {
+                    text-align: left;
+                    padding: 10px 20px 8px 6px;
+                    box-sizing: border-box;
+                    background-color: $color-background-light;
+                    border: 1px solid #dce0e7;
+                    border-color: $color-border;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 552px) {
+    .race-card {
+    
+        .race-information {
+            flex-flow: column;
+
+            .information-block {
+                padding-left: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 502px) {
+    .race-card {
+    
+        table {
+    
+            tbody {
+    
+                tr {
+    
+                    td {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

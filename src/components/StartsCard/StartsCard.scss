@@ -1,0 +1,50 @@
+@import 'src/styles/general.scss';
+@import 'src/styles/colors.scss';
+
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: table-row;
+
+    td {
+        padding-left: 34px;
+    }
+}
+
+.clickable {
+    cursor: pointer;
+    position: relative;
+
+    .arrowUp {
+        display: block;
+        position: absolute;
+        right: 6px;
+        top: 15px;
+    }
+
+    .arrowUp.none {
+        display: none;
+    }
+
+    .arrowDown {
+        display: none;
+        position: absolute;
+        right: 6px;
+        top: 15px;
+    }
+
+    .arrowDown.shown {
+        display: block;
+    }
+}
+
+.light-text {
+    color: $color-text-light;
+}
+
+.collapsible-information {
+    display: flex;
+    flex-flow: column;
+}

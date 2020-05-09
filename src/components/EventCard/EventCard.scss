@@ -1,0 +1,51 @@
+@import 'src/styles/general.scss';
+@import 'src/styles/colors.scss';
+
+.event-card {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 116.5px;
+    padding: 200px 20px 40px 20px;
+    box-sizing: border-box;
+    background-color: $color-white;
+
+    h1 {
+        font-size: 72px;
+        margin: 0;
+        color: $color-white;
+    }
+
+    .event-banner {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 593px) {
+    .event-card {
+        margin-top: 125.5px;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    .event-card {
+        margin-top: 134.5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .event-card {
+        margin-top: 143.5px;
+    }
+}
