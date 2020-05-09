@@ -30,7 +30,8 @@ Clone project:
 Run project:
 After you have cloned the project from GitHub. Follow the steps below to run the project.
 
-1. Use the terminal and step to project folder.
+1. Install npm or yarn, I will not show how to do that so take your time and go to next step when that is done. (Skip this step if you already have npm or yarn installed).
+2. Use the terminal and step to project folder.
 ```$ cd <path to project folder>```
 2. Start application using npm or yarn.
 npm: ```$ npm start```
